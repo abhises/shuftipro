@@ -304,7 +304,7 @@ export default class ShuftiProKyc {
       });
     }
 
-    // if (!verifySignature(rawBody, signatureHeader, `${CONFIG.SECRET_KEY}`)) {
+    // (!verifyShuftiSignature(rawBodyString, signatureHeader)) {
     //   ErrorHandler.add_error("KYC response signature invalid", {
     //     userId: clean.userId,
     //     reference,
