@@ -435,6 +435,7 @@ export default class ScyllaDb {
       payload,
       ScyllaDb.#config.port
     );
+    console.log("resp", resp);
 
     if (ScyllaDb.#config.enableCache) {
       delete ScyllaDb.#cache.getItem[ScyllaDb.#itemCacheKey(table, key)];

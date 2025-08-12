@@ -7,13 +7,17 @@
     "test": "test"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "node test/test.js",
+    "createTable": "node createTables.js"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "description": "",
   "dependencies": {
-    "dotenv": "^17.2.1"
+    "@aws-sdk/client-s3": "^3.864.0",
+    "dotenv": "^17.2.1",
+    "luxon": "^3.7.1",
+    "moment": "^2.30.1"
   }
 }
